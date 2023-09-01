@@ -396,6 +396,9 @@ You can embed a video with the following syntax:
 ```liquid
 {% include embed/{Platform}.html id='{ID}' %}
 ```
+
+{% include embed/youtube.html id='Balreaj8Yqs' %}
+
 Where `Platform` is the lowercase of the platform name, and `ID` is the video ID.
 
 The following table shows how to get the two parameters we need in a given video URL, and you can also know the currently supported video platforms.
