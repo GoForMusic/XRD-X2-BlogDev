@@ -91,3 +91,4 @@ XR is already transforming the design and development of both goods and processe
 
 ![XR Conference meeting](/assets/img/XRD-introduction-conference%20meeting.jpeg)
 _XR meeting conference_
+
