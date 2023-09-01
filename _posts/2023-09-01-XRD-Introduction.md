@@ -1,6 +1,6 @@
 ---
 title: Introduction to XR course
-author: Adrian-Cristian Militaru
+author: [1]
 date: 2023-09-01 19:37:00 +0200
 categories: [XR, DEV]
 tags: [article]     # TAG names should always be lowercase
