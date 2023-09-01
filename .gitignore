@@ -21,3 +21,10 @@ package-lock.json
 
 # Misc
 assets/js/dist
+_site/feed.xml
+_site/sitemap.xml
+_site/sw.js
+_site/about/index.html
+_site/archives/index.html
+_site/categories/index.html
+_site/tags/index.html
