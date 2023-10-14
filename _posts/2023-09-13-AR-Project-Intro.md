@@ -34,11 +34,11 @@ As the lecture unfolds, the teacher instructs students to identify a specific ca
 
 There will be quite few interactions available within the augmented object:
 
-•	Scale and rotate it
-•	Peer inside the buildings.
-•	Tap on objects for additional content:
-    o	Audio narration (e.g., a soldier telling a story)
-    o	Emerging text message
+-   Scale and rotate it
+-   Peer inside the buildings.
+-   Tap on objects for additional content:
+    -	Audio narration (e.g., a soldier telling a story)
+    -	Emerging text message
 
 ## The heart of Roman commerce
 
