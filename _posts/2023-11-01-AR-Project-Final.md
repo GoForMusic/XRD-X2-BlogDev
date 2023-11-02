@@ -8,24 +8,25 @@ tags: [article]     # TAG names should always be lowercase
 
 In this piece, we will review and reflect upon the progress made over the past weeks. We will delve into the process of creating each working element and explain the core functionality behind the scenes. This blogpost aims to provide valuable insights and a clear understanding of how our application comes to life.
 
-### The modelling and 3D Assets [Marty + Adrian + Marian]
+## The modelling and 3D Assets [Marty + Adrian + Marian]
 
 We had access to “Roman Low poly” 3D asset collection (Thanks to Adrian) and therefore decided to use it for our modelling purposes. 
 
 The models that team created includes:
 
--   ## Roman forum (market)
-    ![City_Center_1-view](/assets/img/city_center1.png)
-    ![City_Center_2-view](/assets/img/city_center2.png)
-    ![City_Center_3-view](/assets/img/city_center3.png)
-    ![City_Center_4-view](/assets/img/city_center4.png)
-    ![City_Center_5-view](/assets/img/city_center5.png)
+### Roman forum (market)    
+![City_Center_1-view](/assets/img/city_center1.png)
+![City_Center_2-view](/assets/img/city_center2.png)
+![City_Center_3-view](/assets/img/city_center3.png)
+![City_Center_4-view](/assets/img/city_center4.png)
+![City_Center_5-view](/assets/img/city_center5.png)
 
--   ## Roman temple
-    ![Temple1-view](/assets/img/temple1.png)
-    ![Temple2-view](/assets/img/temple2.png)
-    ![Temple3-view](/assets/img/temple3.png)
-    ![Temple4-view](/assets/img/temple4.png)
+### Roman temple
+![Temple1-view](/assets/img/temple1.png)
+![Temple2-view](/assets/img/temple2.png)
+![Temple3-view](/assets/img/temple3.png)
+![Temple4-view](/assets/img/temple4.png)
+
 
 
 The modelling process was purely just working with unity and our imagination; therefore, it looked something like this: (see gif below)
@@ -40,7 +41,7 @@ All additional prefabs have been imported to “SM_citycenter” model, which wi
 
 ![Image of SM_CityCenter prefab hierarchy](/assets/img/picture2.png)
 
-### AR Image tracking [Marty]
+## AR Image tracking [Marty]
 
 As trackable 2D images, we decided to use AR markers (see picture below), because they were specifically designed for AR recognition, and for our use case it proved to work a bit better than a regular picture. AR Marker offers more reliable tracking and is less affected by lighting conditions. 
 
@@ -91,9 +92,9 @@ If (activeArPrefab != null) conditional makes sure that if there is already an a
 
 Finally, we make a new reference for activeArPrefab object by assigning it with the 3D object that has the same name as the tracked image `arObjectList[name]`. (See Image above)  After that we activate the 3D object, so it makes it visible, and we position it according to the position of the trackedImage. Last “transform” for the scale does just scale our 3D object in the reference of the predefined xyz values.
 
-### Canvas [Adrian + Marian]
+## Canvas [Adrian + Marian]
 
-### Animations [Adrian]
+## Animations [Adrian]
 
 Because we require a modular approach to set up a certain posture for a single actor in the scene for the animation, I've built a script that uses an enum of animation-poses names to be much easier to deal with inside the editor.
 
@@ -107,9 +108,9 @@ And, in order to achieve and make the character perform the desired position, we
 
 ![Image of the animator](/assets/img/animationPoseAnimatorUI.png)
 
-### Sound interaction [Marian]
+## Sound interaction [Marian]
 
 
-### Resources
+## Resources
 -   [AR tracked image manager - Unity DOCS](https://docs.unity.cn/Packages/com.unity.xr.arfoundation@4.2/manual/tracked-image-manager.html)
 -   [Unity - Scripting API:Animator.Play](https://docs.unity3d.com/ScriptReference/Animator.Play.html)
