@@ -8,14 +8,25 @@ tags: [article]     # TAG names should always be lowercase
 
 In this piece, we will review and reflect upon the progress made over the past weeks. We will delve into the process of creating each working element and explain the core functionality behind the scenes. This blogpost aims to provide valuable insights and a clear understanding of how our application comes to life.
 
-### The modelling and 3D Assets [Marty]
+### The modelling and 3D Assets [Marty + Adrian + Marian]
 
 We had access to “Roman Low poly” 3D asset collection (Thanks to Adrian) and therefore decided to use it for our modelling purposes. 
 
 The models that team created includes:
 
--   Roman forum (market)
--   Roman temple
+-   ## Roman forum (market)
+    ![City_Center_1-view](/assets/img/city_center1.png)
+    ![City_Center_2-view](/assets/img/city_center2.png)
+    ![City_Center_3-view](/assets/img/city_center3.png)
+    ![City_Center_4-view](/assets/img/city_center4.png)
+    ![City_Center_5-view](/assets/img/city_center5.png)
+
+-   ## Roman temple
+    ![Temple1-view](/assets/img/temple1.png)
+    ![Temple2-view](/assets/img/temple2.png)
+    ![Temple3-view](/assets/img/temple3.png)
+    ![Temple4-view](/assets/img/temple4.png)
+
 
 The modelling process was purely just working with unity and our imagination; therefore, it looked something like this: (see gif below)
 
@@ -80,12 +91,25 @@ If (activeArPrefab != null) conditional makes sure that if there is already an a
 
 Finally, we make a new reference for activeArPrefab object by assigning it with the 3D object that has the same name as the tracked image `arObjectList[name]`. (See Image above)  After that we activate the 3D object, so it makes it visible, and we position it according to the position of the trackedImage. Last “transform” for the scale does just scale our 3D object in the reference of the predefined xyz values.
 
-### Canvas [Adrian]
+### Canvas [Adrian + Marian]
 
 ### Animations [Adrian]
+
+Because we require a modular approach to set up a certain posture for a single actor in the scene for the animation, I've built a script that uses an enum of animation-poses names to be much easier to deal with inside the editor.
+
+![Image of code snippet](/assets/img/animationPoseCode.png)
+
+And we can easily arrange a character to play a certain animation posture with this script.
+
+![Image of code inside the Editor](/assets/img/animationPoseEditorUI.png)
+
+And, in order to achieve and make the character perform the desired position, we will need an animator controller with all of the animations that will apply to all of the characters (with the same skeleton).
+
+![Image of the animator](/assets/img/animationPoseAnimatorUI.png)
 
 ### Sound interaction [Marian]
 
 
 ### Resources
 -   [AR tracked image manager - Unity DOCS](https://docs.unity.cn/Packages/com.unity.xr.arfoundation@4.2/manual/tracked-image-manager.html)
+-   [Unity - Scripting API:Animator.Play](https://docs.unity3d.com/ScriptReference/Animator.Play.html)
