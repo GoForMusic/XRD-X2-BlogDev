@@ -48,11 +48,11 @@ I worked on the environment and created a mountain view in the Unity Editor usin
 
 In addition to painting the area with certain textures (grass/dirt/cliff/water/snow), I also painted a tree in the environment.
 
-![Marian-vr-scene](/assets/img/marian-vr-scene.png)
+![Marian-vr-scene](/assets/img/Marian-vr-scene.png)
 
 The other task completed was the creation of a fake Canvas that Adrian may later link using the logic.
 
-![Marian-vr-scene2](/assets/img/marian-vr-scene2.png)
+![Marian-vr-scene2](/assets/img/Marian-vr-scene2.png)
 
 The canvas is connected using the JSON file's issue.
 
