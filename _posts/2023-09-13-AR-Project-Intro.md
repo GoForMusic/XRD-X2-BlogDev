@@ -1,6 +1,6 @@
 ---
 title: AR Project description
-author: [2]
+author: [1,2,3]
 date: 2023-09-13 21:32:00 +0200
 categories: [AR, DEV]
 tags: [article, idea, innovation, education, history]     # TAG names should always be lowercase
