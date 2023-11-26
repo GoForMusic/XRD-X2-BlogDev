@@ -128,9 +128,34 @@ And, in order to achieve and make the character perform the desired position, we
 ![Image of the animator](/assets/img/animationPoseAnimatorUI.png)
 
 ---
-## Sound interaction [Marian]
+## Sound interaction [Marty]
 
----
+This Unity script, PlayAudioOnTap, is designed to play an audio clip when a specific object (to which this script is attached) is tapped on a touch screen device. Here's a breakdown of how it works:
+
+![Image of the animator](/assets/img/sound.png)
+
+"AudioSource" is a Unity component that allows sound to be played in a 3D environment.
+
+When the Start method is invoked, we initialize the audio source with an audio source component that is attached to the object that is using this script.
+
+`if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)` This conditional statement checks if there is at least one touch on the screen 
+
+`Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position)` creates a ray from the camera position through the point on the screen where the touch was detected.
+
+`RaycastHit hit` - to store information about what the ray hits.
+
+`if (Physics.Raycast(ray, out hit))` - The ray is sent into the scene and if it hits a collider (which is attached to the game object), the information is stored in hit.
+
+`if (hit.transform == this.transform)` - This condition checks whether the ray hit the same GameObject that this script is attached to, and if it does - plays the sound. (If there is an AudioSource component and it isn't already playing)
+
+Below is a picture of how it appears in Unity editor, along with a description of each component:
+
+
+![Image of the animator](/assets/img/sound_editor.png)
+
+
+
+
 ## Resources
 -   [AR tracked image manager - Unity DOCS](https://docs.unity.cn/Packages/com.unity.xr.arfoundation@4.2/manual/tracked-image-manager.html)
 -   [Unity - Scripting API:Animator.Play](https://docs.unity3d.com/ScriptReference/Animator.Play.html)
