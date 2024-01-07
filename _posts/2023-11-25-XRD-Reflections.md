@@ -43,6 +43,44 @@ Another innovation will be the ability to change the Scene area based on the sub
 ## Marian's Reflection
 
 
+I am happy I took this optional course. I play games and finding out how to make them, or at least starting to learn the tools that can be used to make them has been one of my goals since I was a child. Naturally, I chose game development for the next semester.
+Throughout the projects, there were periods when I felt that I did not understand anything, but then, to find out that I was not alone, and together with my group and with the help of the teacher, we discovered ways of doing things.
+The AR app is something that teachers can use in their history classes so that students can actually experience how different buildings and tools used to look like through their phones. It is something that I would definitely have liked when I was being taught history in school.
+The VR app is a version of the "Who Wants to Be a Millionaire?" TV quiz. I had a lot of fun creating the terrain, learning how brushes work, importing different textures and assets, placing trees, and finding a good scale for them.
+The classes have been full of information, and Kasper has a very good way of explaining things and giving us good examples.
+### What I did
+
+
+For AR application:
+- Creating the model.
+- Adding text to characters to be visible when a character is clicked.
+- Worked with audio.
+
+
+For VR application:
+- I created the model, 
+- Designed the canvas and populated it with questions. 
+
+### What I enjoyed
+
+I enjoyed working with the VR application the most when I created the terrain. As it was my first time doing this, discovering the tools and playing around with them was an interesting experience. Trying multiple assets and working to integrate them taught me even more about how Unity works.
+### What I found difficult
+
+As this was my first time working with Unity, the tool itself was a bit difficult to understand. I did not know where I could find things, how to connect my code to the model, such as fields from the code with objects in the view, and so on. But with time, hands-on experience, and many tutorials, I learned everything.
+### What worked well
+
+In the end, both applications worked well, and I think we had a good presentation. As it was the first time working with Unity for all of us, being able to display two projects was very successful.
+### In the future
+AR:
+ - For better experience, create own audio files in latin and in english
+ - More models, more things to visualize.
+
+VR:
+ - Find an API and send requests to it to dynamically get questions. This way, category and difficulty can be selected
+ - Grabing objects and placing them on the plates has been incosistent sometimes and you don't really know if you answer correctly
+ - Enhance the terrain.
+
+
 ## Martynas Reflection
 
 ### My contributions
